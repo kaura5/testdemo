@@ -4,10 +4,9 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 
-function Card({data}) {
-    
+function Jewelery({data}) {
     if(data.length === 0) return null;else{
-        let result = data.filter(obj => obj.category === "men's clothing")
+        let result = data.filter(obj => obj.category === "jewelery")
     return(
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
         {result.map((item) => (
@@ -24,4 +23,4 @@ function Card({data}) {
     )
 }}
 
-export default Card;
+export default Jewelery;
